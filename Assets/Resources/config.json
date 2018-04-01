@@ -1,0 +1,145 @@
+{
+	"main":{
+		"title":"Main",
+		"type":"menu",
+		"items":[
+		{
+			"title":"Checklists",
+			"type":"menu",
+			"items":[
+			{
+				"title":"Morning",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Enter Weight",
+					"text":"If you need to pee, do that first",
+					"type":"2Number",
+					"increment":0.2,
+					"dec1":1,
+					"default1":180
+					},
+					{
+					"title":"Brush Teeth",
+					"text":"2 minutes"
+					},
+					{
+					"title":"Floss",
+					"text":"2 minutes"
+					},
+					{
+					"title":"Alergies",
+					"text":"Nasal spray and/or alergy pill"
+					},
+					{
+					"title":"Kitty Harness",
+					"text":"Put away kitty harnesses"
+					},
+					{
+					"title":"Coffee",
+					"text":"Half scoop of instant, if not fasting do 2 scoops of chocolate protein powder"
+					},
+					{
+					"title":"Ice Packs",
+					"text":"Put the kitty food ice packs in the freezer"
+					},
+					{
+					"title":"Kitty Teeth",
+					"text":"Brush the kitty teeth"
+					},
+					{
+					"title":"Smoothies",
+					"text":"Make the veggie smoothies"
+					}
+					]
+				}
+			},
+			{
+				"title":"Evening",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Harness Kitties",
+					"text":"Put the kitties in their harnesses"
+					},
+					{
+					"title":"Kitty tent",
+					"text":"Bring in kitty tent"
+					},
+					{
+					"title":"Litter",
+					"text":"Scoop the poop"
+					},
+					{
+					"title":"Foam Roller",
+					"text":"Roll out legs, back, side"
+					},
+					{
+					"title":"Messages",
+					"text":"Check messages"
+					},
+					{
+					"title":"Phone",
+					"text":"Plug in phone out of reach of the bed"
+					},
+					{
+					"title":"Brush Teeth",
+					"text":"Full 2 minutes"
+					}
+					]
+				}
+			}
+			]
+		},
+		{
+			"title":"Workout",
+			"type":"menu",
+			"items":[
+			{
+				"title":"Light Cardio"
+			},
+			{
+				"title":"Heavy Cardio"
+			},
+			{
+				"title":"Weights",
+				"type":"menu",
+				"items":[
+				{
+					"title":"Placeholder",
+					"type":"placeholder"
+				}
+				]
+			},
+			{
+				"title":"Yoga"
+			}
+			]
+		},
+		{
+			"title":"Food",
+			"type":"menu",
+			"items":[
+			{
+				"title":"Placeholder",
+				"type":"placeholder"
+			}
+			]
+		},
+		{
+			"title":"Reminders",
+			"type":"menu",
+			"items":[
+			{
+				"title":"Placeholder",
+				"type":"placeholder"
+			}
+			]
+		}
+		]
+		}
+}

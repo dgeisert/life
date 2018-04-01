@@ -1,16 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class Checklist : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+[System.Serializable]
+public class Checklist {
+	public string title, text;
+	public ChecklistItem[] items;
+	public int index = 0;
 }
