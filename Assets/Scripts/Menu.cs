@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour {
 	MenuItem currentMenu;
 
 	void Start () {
+		Amplitude.Instance.init("3f32e017748124cb86c984f4756231d4");
 		instance = this;
 		config = JsonUtility.FromJson<Config>(Resources.Load ("config").ToString());
 

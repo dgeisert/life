@@ -40,12 +40,6 @@ public class Panel : MonoBehaviour {
 			enterNumber2.SetActive (false);
 			break;
 		}
-		button1.onClick.RemoveAllListeners ();
-		button1.onClick.AddListener (Menu.instance.Next);
-		button2.onClick.RemoveAllListeners ();
-		button2.onClick.AddListener (Menu.instance.Next);
-		button1.transform.GetChild (0).GetComponent<Text> ().text = "Done";
-		button2.transform.GetChild (0).GetComponent<Text> ().text = "Skip";
 		title.text = item.title;
 		text.text = item.text;
 	}
@@ -78,5 +72,18 @@ public class Panel : MonoBehaviour {
 
 	public void Back(){
 		Menu.instance.Back ();
+		SendStats ("Back");
+	}
+
+	public void SendStats(string action){
+		Dictionary<string, object> dic = new Dictionary<string, object> ();
+		dic.Add ("value1", setNum);
+		dic.Add ("value2", setNum2);
+		dic.Add ("action", action);
+		Utils.SendStats (title.text, dic);
+	}
+
+	public void Next(){
+		Menu.instance.Next ();
 	}
 }

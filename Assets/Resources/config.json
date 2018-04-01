@@ -16,7 +16,7 @@
 					{
 					"title":"Enter Weight",
 					"text":"If you need to pee, do that first",
-					"type":"2Number",
+					"type":"Number",
 					"increment":0.2,
 					"dec1":1,
 					"default1":180
@@ -161,6 +161,16 @@
 		{
 			"title":"Reminders",
 			"type":"menu",
+			"items":[
+			{
+				"title":"Placeholder",
+				"type":"placeholder"
+			}
+			]
+		},
+		{
+			"title":"Quick Track",
+			"type":"track",
 			"items":[
 			{
 				"title":"Placeholder",

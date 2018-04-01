@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections.Generic;
 public class Utils {
 	public static string FormatNumber(float f, int decimals, bool commas = false){
 		string str = Mathf.FloorToInt (f).ToString ();
@@ -22,5 +23,9 @@ public class Utils {
 			return false;
 		}
 		return true;
+	}
+
+	public static void SendStats(string stat, Dictionary<string, object> dic){
+		Amplitude.Instance.logEvent (stat, dic);
 	}
 }
