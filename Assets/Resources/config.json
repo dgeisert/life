@@ -52,6 +52,20 @@
 					{
 					"title":"Smoothies",
 					"text":"Make the veggie smoothies"
+					},
+					{
+					"title":"Cleaners Check",
+					"text":"Double check the cleaners envelope has checks in it",
+					"condition":{
+						"day":"Tuesday"
+					}
+					},
+					{
+					"title":"Credit Card",
+					"text":"Pay off your credit card",
+					"condition":{
+						"dayOfMonth":10
+					}
 					}
 					]
 				}
@@ -69,6 +83,20 @@
 					{
 					"title":"Kitty tent",
 					"text":"Bring in kitty tent"
+					},
+					{
+					"title":"Trash Out",
+					"text":"Put out trash cans",
+					"condition":{
+						"day":"Sunday"
+					}
+					},
+					{
+					"title":"Cans In",
+					"text":"Bring in trash cans",
+					"condition":{
+						"day":"Monday"
+					}
 					},
 					{
 					"title":"Litter",

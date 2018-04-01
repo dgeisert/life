@@ -13,6 +13,10 @@ public class Panel : MonoBehaviour {
 	int dec1, dec2;
 
 	public void Init(ChecklistItem item, bool final){
+		if (!Utils.CheckCondition (item.condition)) {
+			Menu.instance.Next ();
+			return;
+		}
 		inc = item.increment;
 		inc2 = item.increment2;
 		dec1 = item.dec1;
@@ -23,13 +27,13 @@ public class Panel : MonoBehaviour {
 		case "Number":
 			enterNumber.SetActive (true);
 			enterNumber2.SetActive (false);
-			number.text = Utils.formatNumber(setNum, dec1);
+			number.text = Utils.FormatNumber(setNum, dec1);
 			break;
 		case "2Number":
 			enterNumber.SetActive (true);
 			enterNumber2.SetActive (true);
-			number.text = Utils.formatNumber(setNum, dec1);
-			number2.text = Utils.formatNumber(setNum2, dec2);
+			number.text = Utils.FormatNumber(setNum, dec1);
+			number2.text = Utils.FormatNumber(setNum2, dec2);
 			break;
 		default:
 			enterNumber.SetActive (false);
@@ -61,11 +65,11 @@ public class Panel : MonoBehaviour {
 
 	public void Change1(float f){
 		setNum += inc * f;
-		number.text = Utils.formatNumber(setNum, dec1);
+		number.text = Utils.FormatNumber(setNum, dec1);
 	}
 	public void Change2(float f){
 		setNum2 += inc2 * f;
-		number2.text = Utils.formatNumber(setNum2, dec2);
+		number2.text = Utils.FormatNumber(setNum2, dec2);
 	}
 
 	public void Buttons(int i){
