@@ -12,9 +12,16 @@ public class Menu : MonoBehaviour {
 
 	Checklist currentChecklist;
 	MenuItem currentMenu;
+	public Amplitude amplitude;
+
+	void Awake () {
+		amplitude = Amplitude.Instance;
+		amplitude.logging = true;
+		amplitude.init("3f32e017748124cb86c984f4756231d4");
+	}
 
 	void Start () {
-		Amplitude.Instance.init("3f32e017748124cb86c984f4756231d4");
+		amplitude.logEvent ("start");
 		instance = this;
 		config = JsonUtility.FromJson<Config>(Resources.Load ("config").ToString());
 

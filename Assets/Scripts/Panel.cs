@@ -71,8 +71,8 @@ public class Panel : MonoBehaviour {
 	}
 
 	public void Back(){
-		Menu.instance.Back ();
 		SendStats ("Back");
+		Menu.instance.Back ();
 	}
 
 	public void SendStats(string action){

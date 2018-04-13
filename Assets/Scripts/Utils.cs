@@ -26,6 +26,6 @@ public class Utils {
 	}
 
 	public static void SendStats(string stat, Dictionary<string, object> dic){
-		Amplitude.Instance.logEvent (stat, dic);
+		Menu.instance.amplitude.logEvent (stat, dic);
 	}
 }

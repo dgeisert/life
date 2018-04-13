@@ -30,8 +30,8 @@
 					"text":"2 minutes"
 					},
 					{
-					"title":"Alergies",
-					"text":"Nasal spray and/or alergy pill"
+					"title":"Allergies",
+					"text":"Nasal spray and/or allergy pill"
 					},
 					{
 					"title":"Kitty Harness",
@@ -128,23 +128,149 @@
 			"type":"menu",
 			"items":[
 			{
-				"title":"Light Cardio"
+				"title":"Light Cardio",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Light Cardio",
+					"text":"Just estimate total minutes",
+					"type":"Number",
+					"increment":1,
+					"dec1":0,
+					"default1":20
+					}
+					]
+				}
 			},
 			{
-				"title":"Heavy Cardio"
+				"title":"Heavy Cardio",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Heavy Cardio",
+					"text":"Just estimate total minutes",
+					"type":"Number",
+					"increment":1,
+					"dec1":0,
+					"default1":20
+					}
+					]
+				}
 			},
 			{
 				"title":"Weights",
 				"type":"menu",
 				"items":[
 				{
-					"title":"Placeholder",
-					"type":"placeholder"
+					"title":"Curls",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Curls",
+						"text":"Weights and Reps",
+						"type":"2Number",
+						"increment":1,
+						"dec1":0,
+						"default1":20,
+						"default2":25
+						}
+						]
+					}
+				},
+				{
+					"title":"Shoulder Press",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Shoulder Press",
+						"text":"Weights and Reps",
+						"type":"2Number",
+						"increment":1,
+						"dec1":0,
+						"default1":20,
+						"default2":25
+						}
+						]
+					}
+				},
+				{
+					"title":"Triceps",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Triceps",
+						"text":"Weights and Reps",
+						"type":"2Number",
+						"increment":1,
+						"dec1":0,
+						"default1":20,
+						"default2":25
+						}
+						]
+					}
+				},
+				{
+					"title":"Squats",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Squats",
+						"text":"Reps",
+						"type":"Number",
+						"increment":1,
+						"dec1":0,
+						"default1":50
+						}
+						]
+					}
+				},
+				{
+					"title":"Push Ups",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Push Ups",
+						"text":"Reps",
+						"type":"Number",
+						"increment":1,
+						"dec1":0,
+						"default1":20
+						}
+						]
+					}
 				}
 				]
 			},
 			{
-				"title":"Yoga"
+				"title":"Yoga",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Yoga",
+					"text":"Just estimate total minutes",
+					"type":"Number",
+					"increment":1,
+					"dec1":0,
+					"default1":20
+					}
+					]
+				}
 			}
 			]
 		},
@@ -153,8 +279,55 @@
 			"type":"menu",
 			"items":[
 			{
-				"title":"Placeholder",
-				"type":"placeholder"
+				"title":"Calories",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Calories",
+					"text":"Just estimate total Calories",
+					"type":"Number",
+					"increment":20,
+					"dec1":0,
+					"default1":200
+					}
+					]
+				}
+			},
+			{
+				"title":"Caffeine",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Caffeine",
+					"text":"Just estimate total Caffeine in cups of coffee",
+					"type":"Number",
+					"increment":0.2,
+					"dec1":1,
+					"default1":1
+					}
+					]
+				}
+			},
+			{
+				"title":"Alcohol",
+				"type":"checklist",
+				"checklist":
+				{
+					"items":[
+					{
+					"title":"Alcohol",
+					"text":"Just estimate total Alcohol in beers equivalence",
+					"type":"Number",
+					"increment":0.2,
+					"dec1":1,
+					"default1":1
+					}
+					]
+				}
 			}
 			]
 		},
@@ -170,11 +343,78 @@
 		},
 		{
 			"title":"Quick Track",
-			"type":"track",
+			"type":"menu",
 			"items":[
 			{
-				"title":"Placeholder",
-				"type":"placeholder"
+				"title":"Family",
+				"type":"menu",
+				"items":[
+				{
+					"title":"Dad",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Dad",
+						"text":"Talked to Dad"
+						}
+						]
+					}
+				},
+				{
+					"title":"Mom",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Mom",
+						"text":"Talked to Mom"
+						}
+						]
+					}
+				},
+				{
+					"title":"Jeff",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Jeff",
+						"text":"Talked to Jeff"
+						}
+						]
+					}
+				},
+				{
+					"title":"Kim",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Kim",
+						"text":"Talked to Kim"
+						}
+						]
+					}
+				},
+				{
+					"title":"Nana",
+					"type":"checklist",
+					"checklist":
+					{
+						"items":[
+						{
+						"title":"Nana",
+						"text":"Talked to Nana"
+						}
+						]
+					}
+				}
+				]
 			}
 			]
 		}
